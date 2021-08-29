@@ -4,7 +4,8 @@
   "description": "Simple typescript file",
   "main": "index.js",
   "scripts": {
-    "build" : "tsc"
+    "build" : "tsc",
+    "test": "node dist/index.js"
   },
   "keywords": [],
   "author": "@cokoyoh",
