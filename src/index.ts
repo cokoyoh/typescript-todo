@@ -14,7 +14,7 @@ const collection: TodoCollection = new TodoCollection('Adam', todos);
 let showCompleted = true;
 
 const displayTodoList = (): void => {
-  console.log(`${collection.userName}'s Todo List  (${collection.getItemCounts().imcomplete} items to do)`);
+  console.log(`${collection.userName}'s Todo List  (${collection.getItemCounts().incomplete} items to do)`);
   collection.getTodoItems(showCompleted).forEach(item => item.printDetails());
 }
 
