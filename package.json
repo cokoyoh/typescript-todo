@@ -4,10 +4,13 @@
   "description": "Simple typescript file",
   "main": "index.js",
   "scripts": {
-    "build" : "tsc",
+    "build": "tsc",
     "test": "node dist/index.js"
   },
   "keywords": [],
   "author": "@cokoyoh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "7.3.3"
+  }
 }
