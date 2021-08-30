@@ -1,6 +1,7 @@
 import { TodoItem } from './todoItem';
 import { TodoCollection } from './todoCollection';
-import * as inquirer from 'inquirer'
+import * as inquirer from 'inquirer';
+import { JsonTodoCollection } from './jsonTodoCollection';
 
 const todos: Array<TodoItem> = [
   new TodoItem(1, 'Buy Flowers'),
@@ -9,7 +10,7 @@ const todos: Array<TodoItem> = [
   new TodoItem(4, 'Call Joe', true),
 ]
 
-const collection: TodoCollection = new TodoCollection('Adam', todos);
+const collection: TodoCollection = new JsonTodoCollection('Adam', todos);
 
 let showCompleted = true;
 
