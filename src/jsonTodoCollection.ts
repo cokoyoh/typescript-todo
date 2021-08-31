@@ -3,8 +3,14 @@ import { TodoCollection } from './todoCollection';
 import * as lowdb from 'lowdb';
 import * as FileSync from 'lowdb/adapters/FileSync';
 
+type TodoItemType = {
+  id: number,
+  task: string,
+  complete: boolean
+}
+
 type schemaType = {
-  tasks: Array<{ id: number; task: string; complete: boolean }>;
+  tasks: Array<TodoItemType>;
 };
 
 export class JsonTodoCollection extends TodoCollection {
